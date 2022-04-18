@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Javsascript Task App</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="body">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="nav">
+      <div class="container">
+        <a id="titleTask" class="navbar-brand" href="#">APLICACION DE TAREAS Danna Gabriela Prieto Carreño</a>
+        <div>
+          <button id="btn" >Cambiar el tema de la pagina</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Add A Todo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+  <style>
+    button{
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba(24, 24, 180, 0.788);
+      border-color: blue;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</html>
